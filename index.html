@@ -5,206 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Management System</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            width: 100%;
-            max-width: 500px;
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        .form-container {
-            padding: 35px;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 8px;
-        }
-
-        select, input[type="text"] {
-            width: 100%;
-            padding: 14px 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 15px;
-            color: #333;
-            transition: all 0.3s ease;
-            background-color: #f8f9fa;
-        }
-
-        select:focus, input[type="text"]:focus {
-            outline: none;
-            border-color: #667eea;
-            background-color: #ffffff;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        select {
-            cursor: pointer;
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 16px center;
-            padding-right: 40px;
-        }
-
-        select:disabled {
-            cursor: not-allowed;
-            opacity: 0.6;
-        }
-
-        .status-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .status-option {
-            position: relative;
-        }
-
-        .status-option input[type="radio"] {
-            position: absolute;
-            opacity: 0;
-        }
-
-        .status-label {
-            display: block;
-            padding: 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            text-align: center;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background-color: #f8f9fa;
-        }
-
-        .status-option input[type="radio"]:checked + .status-label {
-            border-color: #667eea;
-            background-color: #667eea;
-            color: white;
-        }
-
-        .status-label:hover {
-            border-color: #667eea;
-            transform: translateY(-2px);
-        }
-
-        button {
-            width: 100%;
-            padding: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        button:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        .loading {
-            display: none;
-            text-align: center;
-            color: #667eea;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .loading.active {
-            display: block;
-        }
-
-        .message {
-            text-align: center;
-            padding: 12px;
-            margin-top: 15px;
-            border-radius: 8px;
-            font-size: 14px;
-            display: none;
-        }
-
-        .message.error {
-            background-color: #fee;
-            color: #c33;
-            border: 1px solid #fcc;
-        }
-
-        .message.success {
-            background-color: #efe;
-            color: #3c3;
-            border: 1px solid #cfc;
-        }
-
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .form-container {
-                padding: 25px;
-            }
-
-            .status-group {
-                grid-template-columns: 1fr;
-            }
-        }
+        /* All your original professional CSS remains untouched */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .container { background: #ffffff; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); width: 100%; max-width: 500px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { font-size: 28px; font-weight: 600; margin-bottom: 5px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+        .form-container { padding: 35px; }
+        .form-group { margin-bottom: 25px; }
+        label { display: block; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; }
+        select, input[type="text"] { width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 15px; color: #333; transition: all 0.3s ease; background-color: #f8f9fa; }
+        select:focus, input[type="text"]:focus { outline: none; border-color: #667eea; background-color: #ffffff; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); }
+        select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+        select:disabled { cursor: not-allowed; opacity: 0.6; }
+        .status-group { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .status-option { position: relative; }
+        .status-option input[type="radio"] { position: absolute; opacity: 0; }
+        .status-label { display: block; padding: 16px; border: 2px solid #e0e0e0; border-radius: 10px; text-align: center; font-weight: 600; cursor: pointer; transition: all 0.3s ease; background-color: #f8f9fa; }
+        .status-option input[type="radio"]:checked + .status-label { border-color: #667eea; background-color: #667eea; color: white; }
+        .status-label:hover { border-color: #667eea; transform: translateY(-2px); }
+        button { width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); }
+        button:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6); }
+        button:disabled { background: #ccc; cursor: not-allowed; box-shadow: none; }
+        .loading { display: none; text-align: center; color: #667eea; font-size: 14px; margin-top: 10px; }
+        .loading.active { display: block; }
+        .message { text-align: center; padding: 12px; margin-top: 15px; border-radius: 8px; font-size: 14px; display: none; }
+        .message.error { background-color: #fee; color: #c33; border: 1px solid #fcc; }
+        .message.success { background-color: #efe; color: #3c3; border: 1px solid #cfc; }
+        @media (max-width: 600px) { .header h1 { font-size: 24px; } .form-container { padding: 25px; } .status-group { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -216,7 +45,6 @@
 
         <div class="form-container">
             <div id="attendanceForm">
-                <!-- Company Selection -->
                 <div class="form-group">
                     <label for="company">🏢 Company Name</label>
                     <select id="company" name="company" required>
@@ -225,7 +53,6 @@
                     </select>
                 </div>
 
-                <!-- Employee Selection -->
                 <div class="form-group">
                     <label for="employee">👤 Employee Name</label>
                     <select id="employee" name="employee" required disabled>
@@ -234,13 +61,11 @@
                     <div class="loading" id="employeeLoading">Loading employees...</div>
                 </div>
 
-                <!-- Location Display -->
                 <div class="form-group">
                     <label for="locationDisplay">📍 Location</label>
                     <input type="text" id="locationDisplay" readonly value="Detecting location...">
                 </div>
 
-                <!-- Status Selection -->
                 <div class="form-group">
                     <label>⏰ Attendance Status</label>
                     <div class="status-group">
@@ -255,7 +80,6 @@
                     </div>
                 </div>
 
-                <!-- Hidden Fields -->
                 <input type="hidden" id="timestamp" name="timestamp">
                 <input type="hidden" id="location" name="location">
 
@@ -269,290 +93,205 @@
     </div>
 
     <script>
-        const SHEET_ID = '1PePRiUvoPk0_iLpYMZppYIj_ZJqI5p9gZwToXE5jRxE';
-        const GOOGLE_API_KEY = 'AIzaSyBVJr3BtwLStvjjiQ9cGidfSL7t8sQevBc';
-        const FORM_URL = 'https://script.google.com/macros/s/AKfycbyEl5nV6VHTz_oxPApv5ZlDFfWRbOvYbHBqzaTM1bPxnMpVPT6CB5py28UzIs1uyGWi/exec';
+        /** 
+         * 🛠️ CONFIGURATION 
+         */
+        const SUPABASE_BASE_URL = 'https://zakajrrmzzybyptypjdt.supabase.co';
+        const SUPABASE_KEY = 'sb_publishable_gyCv95K2Grwv6zJglCrUVQ_q2SxXtfT';
+        
+        const ATTENDANCE_TABLE = 'HBPL';
+        const EMPLOYEE_TABLE = 'employee_master';
         
         let locationCoords = null;
         let locationName = 'Unknown';
         let locationReady = false;
 
-        // Load employees from Google Sheets using API
+        // 1. Load Employees (Using lowercase column names from your new SQL)
         async function loadEmployees(company) {
             const employeeSelect = document.getElementById('employee');
             const loading = document.getElementById('employeeLoading');
-            
             employeeSelect.innerHTML = '<option value="">Loading employees...</option>';
             employeeSelect.disabled = true;
             loading.classList.add('active');
 
             try {
-                const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/List!A2:B?key=${GOOGLE_API_KEY}`;
-                console.log('Fetching employees from:', url);
-                console.log('Looking for company:', company);
-                
-                const response = await fetch(url);
-                const data = await response.json();
-                
-                console.log('Google Sheets response:', data);
-                
-                if (data.values && data.values.length > 0) {
-                    // Filter employees - EXACT match only
-                    const employees = data.values
-                        .filter(row => {
-                            const companyInSheet = row[0] ? row[0].toString().trim() : '';
-                            const employeeName = row[1] ? row[1].toString().trim() : '';
-                            const matches = companyInSheet === company && employeeName !== '';
-                            
-                            console.log(`Row: Company="${companyInSheet}", Employee="${employeeName}", Matches=${matches}`);
-                            
-                            return matches;
-                        })
-                        .map(row => row[1].toString().trim());
-                    
-                    console.log('Filtered employees for', company, ':', employees);
-                    
-                    if (employees.length > 0) {
-                        employeeSelect.innerHTML = '<option value="">Select Employee</option>';
-                        
-                        employees.forEach(name => {
-                            const option = document.createElement('option');
-                            option.value = name;
-                            option.textContent = name;
-                            employeeSelect.appendChild(option);
-                        });
-                        
-                        employeeSelect.disabled = false;
-                    } else {
-                        employeeSelect.innerHTML = '<option value="">No employees found</option>';
-                        showMessage(`No employees found for company "${company}"`, 'error');
-                    }
-                } else {
-                    throw new Error('No data returned from Google Sheets');
-                }
-            } catch (error) {
-                console.error('Error loading employees:', error);
-                employeeSelect.innerHTML = '<option value="">Failed to load employees</option>';
-                employeeSelect.disabled = true;
-                showMessage('Failed to load employees. Please check your connection.', 'error');
-            } finally {
-                loading.classList.remove('active');
-            }
-            
-            checkFormReady();
-        }
-
-        // Get location name from coordinates using OpenStreetMap
-        async function getLocationName(lat, lon) {
-            try {
-                const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=18&addressdetails=1`;
-                console.log('Fetching location from:', url);
-                
+                const url = `${SUPABASE_BASE_URL}/rest/v1/${EMPLOYEE_TABLE}?select=*`;
                 const response = await fetch(url, {
+                    method: 'GET',
                     headers: {
-                        'User-Agent': 'AttendanceApp/1.0'
+                        'apikey': SUPABASE_KEY.trim(),
+                        'Authorization': `Bearer ${SUPABASE_KEY.trim()}`
                     }
                 });
+
+                if (!response.ok) throw new Error(`Error ${response.status}`);
+                
                 const data = await response.json();
                 
-                console.log('OpenStreetMap response:', data);
-                
+                // Filter matching company_name and map to employee_name (lowercase)
+                const filtered = data
+                    .filter(row => row.company_name === company)
+                    .map(row => row.employee_name);
+
+                if (filtered.length > 0) {
+                    employeeSelect.innerHTML = '<option value="">Select Employee</option>';
+                    filtered.forEach(name => {
+                        const opt = document.createElement('option');
+                        opt.value = name;
+                        opt.textContent = name;
+                        employeeSelect.appendChild(opt);
+                    });
+                    employeeSelect.disabled = false;
+                } else {
+                    employeeSelect.innerHTML = '<option value="">No employees found</option>';
+                    showMessage(`No employees found for "${company}"`, 'error');
+                }
+            } catch (error) {
+                console.error('Load Error:', error);
+                employeeSelect.innerHTML = '<option value="">Error loading</option>';
+                employeeSelect.disabled = true;
+                showMessage(`Failed to load employees.`, 'error');
+            } finally {
+                loading.classList.remove('active');
+                checkFormReady();
+            }
+        }
+
+        // 2. Location Logic
+        async function getLocationName(lat, lon) {
+            try {
+                const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=18`;
+                const res = await fetch(url, { headers: { 'User-Agent': 'AttendanceApp' } });
+                const data = await res.json();
                 if (data && data.address) {
                     const addr = data.address;
                     const parts = [];
-                    
-                    // Build readable address
                     if (addr.road) parts.push(addr.road);
                     if (addr.suburb || addr.neighbourhood) parts.push(addr.suburb || addr.neighbourhood);
                     if (addr.city || addr.town || addr.village) parts.push(addr.city || addr.town || addr.village);
-                    if (addr.state) parts.push(addr.state);
-                    
-                    if (parts.length > 0) {
-                        return parts.slice(0, 3).join(', ');
-                    }
-                    
-                    return data.display_name.split(',').slice(0, 3).join(',');
-                } else {
-                    return `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
+                    return parts.length > 0 ? parts.slice(0, 3).join(', ') : data.display_name.split(',').slice(0, 3).join(',');
                 }
-            } catch (error) {
-                console.error('Error getting location name:', error);
                 return `${lat.toFixed(4)}, ${lon.toFixed(4)}`;
-            }
+            } catch { return `${lat.toFixed(4)}, ${lon.toFixed(4)}`; }
         }
 
-        // Get user location
         function getLocation() {
-            const locationDisplay = document.getElementById('locationDisplay');
-
-            if (!navigator.geolocation) {
-                locationDisplay.value = 'Location not supported';
-                showMessage('Geolocation is not supported by your browser', 'error');
+            const display = document.getElementById('locationDisplay');
+            if (!navigator.geolocation) { display.value = 'Not supported'; return; }
+            navigator.geolocation.getCurrentPosition(async (pos) => {
+                locationCoords = `${pos.coords.latitude}, ${pos.coords.longitude}`;
+                document.getElementById('location').value = locationCoords;
+                display.value = 'Getting location name...';
+                locationName = await getLocationName(pos.coords.latitude, pos.coords.longitude);
+                display.value = locationName;
+                locationReady = true;
+                checkFormReady();
+            }, (err) => {
+                display.value = 'Access Denied';
                 locationReady = false;
-                return;
-            }
-
-            locationDisplay.value = 'Requesting location...';
-
-            navigator.geolocation.getCurrentPosition(
-                async function(position) {
-                    const lat = position.coords.latitude;
-                    const lon = position.coords.longitude;
-                    
-                    locationCoords = `${lat}, ${lon}`;
-                    document.getElementById('location').value = locationCoords;
-                    
-                    console.log('Got coordinates:', lat, lon);
-                    
-                    locationDisplay.value = 'Getting location name...';
-                    
-                    locationName = await getLocationName(lat, lon);
-                    locationDisplay.value = locationName;
-                    
-                    locationReady = true;
-                    console.log('Location ready:', locationName);
-                    checkFormReady();
-                },
-                function(error) {
-                    console.error('Geolocation error:', error);
-                    locationDisplay.value = 'Location access denied';
-                    locationReady = false;
-                    
-                    let errorMsg = 'Please enable location services. ';
-                    if (error.code === 1) {
-                        errorMsg += 'Location permission denied.';
-                    } else if (error.code === 2) {
-                        errorMsg += 'Location unavailable.';
-                    } else if (error.code === 3) {
-                        errorMsg += 'Request timed out.';
-                    }
-                    
-                    showMessage(errorMsg, 'error');
-                    checkFormReady();
-                },
-                {
-                    enableHighAccuracy: true,
-                    timeout: 15000,
-                    maximumAge: 0
-                }
-            );
+                showMessage('Please enable location services.', 'error');
+            }, { enableHighAccuracy: true });
         }
 
-        // Update timestamp
-        function updateTimestamp() {
+        /**
+         * 🕒 FIXED: India Local Time (UTC +5:30)
+         * This produces: 2026-06-01 15:30:00+05:30
+         */
+        function getIndiaTimestamp() {
             const now = new Date();
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0');
-            const year = now.getFullYear();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            
-            const timestamp = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`;
-            document.getElementById('timestamp').value = timestamp;
-            return timestamp;
+            const options = {
+                timeZone: 'Asia/Kolkata',
+                year: 'numeric', month: '2-digit', day: '2-digit',
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                hour12: false
+            };
+            const formatter = new Intl.DateTimeFormat('en-CA', options);
+            const parts = formatter.formatToParts(now);
+            const p = {};
+            parts.forEach(part => p[part.type] = part.value);
+            return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}:${p.second}+05:30`;
         }
 
-        // Check if form is ready to submit
         function checkFormReady() {
             const company = document.getElementById('company').value;
             const employee = document.getElementById('employee').value;
-            const submitBtn = document.getElementById('submitBtn');
-            
-            if (company && employee && locationReady) {
-                submitBtn.disabled = false;
-            } else {
-                submitBtn.disabled = true;
-            }
+            document.getElementById('submitBtn').disabled = !(company && employee && locationReady);
         }
 
-        // Submit attendance
+        // 3. Submit Attendance (Uses lowercase keys to match your new SQL)
         async function submitAttendance() {
-            const submitBtn = document.getElementById('submitBtn');
-            const company = document.getElementById('company').value;
-            const employee = document.getElementById('employee').value;
-            const status = document.querySelector('input[name="status"]:checked').value;
-            
-            if (!company || !employee || !locationCoords) {
-                showMessage('Please fill all fields and enable location', 'error');
-                return;
-            }
+            const btn = document.getElementById('submitBtn');
+            const companyVal = document.getElementById('company').value;
+            const employeeVal = document.getElementById('employee').value;
+            const statusVal = document.querySelector('input[name="status"]:checked').value;
+            const timestampVal = getIndiaTimestamp();
 
-            const timestamp = updateTimestamp();
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Submitting...';
+            btn.disabled = true;
+            btn.textContent = 'Submitting...';
 
-            const formData = new FormData();
-            formData.append('company', company);
-            formData.append('employee', employee);
-            formData.append('status', status);
-            formData.append('timestamp', timestamp);
-            formData.append('location', locationName);
+            // Payload using EXACT lowercase column names from your new SQL
+            const payload = {
+                company: companyVal,
+                employee: employeeVal,
+                status: statusVal,
+                timestamp: timestampVal,
+                location: locationName
+            };
 
             try {
-                const response = await fetch(FORM_URL, {
+                const url = `${SUPABASE_BASE_URL}/rest/v1/${ATTENDANCE_TABLE}`;
+                const response = await fetch(url, {
                     method: 'POST',
-                    body: formData
+                    headers: {
+                        'apikey': SUPABASE_KEY.trim(),
+                        'Authorization': `Bearer ${SUPABASE_KEY.trim()}`,
+                        'Content-Type': 'application/json',
+                        'Prefer': 'return=minimal'
+                    },
+                    body: JSON.stringify(payload)
                 });
 
-                const result = await response.text();
-                console.log('Submit result:', result);
-
-                if (response.ok || result.includes('Success')) {
-                    showMessage('✓ Attendance submitted successfully!', 'success');
+                if (response.ok) {
+                    showMessage('✓ Success!', 'success');
                     setTimeout(() => {
                         document.getElementById('employee').value = '';
                         document.querySelector('input[name="status"][value="In"]').checked = true;
-                        submitBtn.textContent = 'Submit Attendance';
+                        btn.textContent = 'Submit Attendance';
                         checkFormReady();
                         hideMessage();
                     }, 2000);
                 } else {
-                    throw new Error('Submission failed');
+                    const err = await response.json();
+                    throw new Error(err.message || 'Submission failed');
                 }
             } catch (error) {
                 console.error('Submit error:', error);
-                showMessage('Failed to submit attendance. Please try again.', 'error');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Submit Attendance';
+                showMessage('Error: ' + error.message, 'error');
+                btn.disabled = false;
+                btn.textContent = 'Submit Attendance';
             }
         }
 
-        // Show message
-        function showMessage(text, type) {
-            const message = document.getElementById('message');
-            message.textContent = text;
-            message.className = `message ${type}`;
-            message.style.display = 'block';
+        function showMessage(t, type) {
+            const m = document.getElementById('message');
+            m.textContent = t; m.className = `message ${type}`; m.style.display = 'block';
         }
 
-        // Hide message
-        function hideMessage() {
-            const message = document.getElementById('message');
-            message.style.display = 'none';
-        }
+        function hideMessage() { document.getElementById('message').style.display = 'none'; }
 
-        // Event listeners
-        document.getElementById('company').addEventListener('change', function() {
-            if (this.value) {
-                loadEmployees(this.value);
-            } else {
-                const employee = document.getElementById('employee');
-                employee.innerHTML = '<option value="">First select a company</option>';
-                employee.disabled = true;
-                checkFormReady();
+        document.getElementById('company').addEventListener('change', (e) => {
+            if(e.target.value) loadEmployees(e.target.value);
+            else {
+                const emp = document.getElementById('employee');
+                emp.innerHTML = '<option value="">First select a company</option>';
+                emp.disabled = true;
             }
+            checkFormReady();
         });
 
         document.getElementById('employee').addEventListener('change', checkFormReady);
 
-        // Initialize on page load
-        window.onload = function() {
-            console.log('Initializing attendance form...');
-            getLocation();
-            updateTimestamp();
-        };
+        window.onload = () => { getLocation(); };
     </script>
 </body>
 </html>
